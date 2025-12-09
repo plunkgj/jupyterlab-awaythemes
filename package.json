@@ -1,20 +1,21 @@
 {
-    "name": "jupyterlab-night",
-    "version": "0.5.2",
-    "description": "Dark theme for JupyterLab",
+    "name": "jupyterlab-awaythemes",
+    "version": "0.1.0",
+    "description": "A collection of dark themes for JupyterLab",
     "keywords": [
         "jupyter",
         "jupyterlab",
-        "jupyterlab-extension"
+        "jupyterlab-extension",
+        "theme",
+        "dark-theme"
     ],
-    "homepage": "https://github.com/jupyterlab-contrib/jupyterlab-night",
+    "homepage": "https://github.com/garyforschool/jupyterlab-awaythemes",
     "bugs": {
-        "url": "https://github.com/jupyterlab-contrib/jupyterlab-night/issues"
+        "url": "https://github.com/garyforschool/jupyterlab-awaythemes/issues"
     },
     "license": "BSD-3-Clause",
     "author": {
-        "name": "Martin Renou",
-        "email": "martin.renou@gmail.com"
+        "name": "Gary"
     },
     "files": [
         "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
@@ -25,18 +26,19 @@
     "types": "lib/index.d.ts",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jupyterlab-contrib/jupyterlab-night.git"
+        "url": "https://github.com/garyforschool/jupyterlab-awaythemes.git"
     },
     "scripts": {
-        "build": "jlpm build:lib && jlpm build:labextension:dev",
+        "build": "jlpm build:lib && jlpm build:labextension:dev && jlpm build:themes",
         "build:labextension": "jupyter labextension build .",
         "build:labextension:dev": "jupyter labextension build --development True .",
         "build:lib": "tsc --sourceMap",
         "build:lib:prod": "tsc",
-        "build:prod": "jlpm clean && jlpm build:lib:prod && jlpm build:labextension",
+        "build:prod": "jlpm clean && jlpm build:lib:prod && jlpm build:labextension && jlpm build:themes",
+        "build:themes": "node scripts/build-themes.js",
         "clean": "jlpm clean:lib",
         "clean:all": "jlpm clean:lib && jlpm clean:labextension && jlpm clean:lintcache",
-        "clean:labextension": "rimraf jupyterlab_night/labextension jupyterlab_night/_version.py",
+        "clean:labextension": "rimraf jupyterlab_awaythemes/labextension jupyterlab_awaythemes/_version.py",
         "clean:lib": "rimraf lib tsconfig.tsbuildinfo",
         "clean:lintcache": "rimraf .eslintcache .stylelintcache",
         "eslint": "jlpm eslint:check --fix",
@@ -91,7 +93,7 @@
     },
     "jupyterlab": {
         "extension": true,
-        "outputDir": "jupyterlab_night/labextension",
+        "outputDir": "jupyterlab_awaythemes/labextension",
         "themePath": "style/index.css"
     },
     "jupyter-releaser": {

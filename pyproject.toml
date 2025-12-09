@@ -3,7 +3,7 @@ requires = ["hatchling>=1.5.0", "jupyterlab>=4.0.0,<5", "hatch-nodejs-version>=0
 build-backend = "hatchling.build"
 
 [project]
-name = "jupyterlab_night"
+name = "jupyterlab_awaythemes"
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.8"
@@ -34,23 +34,23 @@ source = "nodejs"
 fields = ["description", "authors", "urls", "keywords"]
 
 [tool.hatch.build.targets.sdist]
-artifacts = ["jupyterlab_night/labextension"]
+artifacts = ["jupyterlab_awaythemes/labextension"]
 exclude = [".github", "binder"]
 
 [tool.hatch.build.targets.wheel.shared-data]
-"jupyterlab_night/labextension" = "share/jupyter/labextensions/jupyterlab-night"
-"install.json" = "share/jupyter/labextensions/jupyterlab-night/install.json"
+"jupyterlab_awaythemes/labextension" = "share/jupyter/labextensions/jupyterlab-awaythemes"
+"install.json" = "share/jupyter/labextensions/jupyterlab-awaythemes/install.json"
 
 [tool.hatch.build.hooks.version]
-path = "jupyterlab_night/_version.py"
+path = "jupyterlab_awaythemes/_version.py"
 
 [tool.hatch.build.hooks.jupyter-builder]
 dependencies = ["hatch-jupyter-builder>=0.5"]
 build-function = "hatch_jupyter_builder.npm_builder"
 ensured-targets = [
-    "jupyterlab_night/labextension/package.json",
+    "jupyterlab_awaythemes/labextension/package.json",
 ]
-skip-if-exists = ["jupyterlab_night/labextension/static/style.js"]
+skip-if-exists = ["jupyterlab_awaythemes/labextension/static/style.js"]
 
 [tool.hatch.build.hooks.jupyter-builder.build-kwargs]
 build_cmd = "build:prod"
@@ -60,7 +60,7 @@ npm = ["jlpm"]
 build_cmd = "install:extension"
 npm = ["jlpm"]
 source_dir = "src"
-build_dir = "jupyterlab_night/labextension"
+build_dir = "jupyterlab_awaythemes/labextension"
 
 [tool.jupyter-releaser.options]
 version_cmd = "hatch version"

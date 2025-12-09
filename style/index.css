@@ -1,12 +1,12 @@
-@import url('./variables.css');
+/*
+ * jupyterlab-awaythemes
+ *
+ * This is the base style entry point.
+ * Individual themes are located in style/themes/<theme-name>/
+ * Each theme has its own index.css and variables.css
+ *
+ * To switch themes, comment/uncomment the import below:
+ */
 
-/* Set the default typography for monospace elements */
-tt,
-code,
-kbd,
-samp,
-pre {
-  font-family: var(--jp-code-font-family);
-  font-size: var(--jp-code-font-size);
-  line-height: var(--jp-code-line-height);
-}
+/* @import url('./themes/blackhole/index.css'); */
+@import url('./themes/aurora/index.css');

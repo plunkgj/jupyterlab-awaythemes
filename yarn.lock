@@ -3455,9 +3455,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jupyterlab-night@workspace:.":
+"jupyterlab-awaythemes@workspace:.":
   version: 0.0.0-use.local
-  resolution: "jupyterlab-night@workspace:."
+  resolution: "jupyterlab-awaythemes@workspace:."
   dependencies:
     "@jupyterlab/application": ^4.3.3
     "@jupyterlab/apputils": ^4.4.3
