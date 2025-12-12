@@ -485,7 +485,13 @@ body[data-jp-theme-name="Deep Space"] {
 }
 
 .jp-Launcher {
-  background: rgba(0, 0, 5, 0.85);
+  background: transparent !important;
+}
+
+.jp-Launcher-cwd {
+  background: rgba(5, 6, 10, 0.7) !important;
+  border-radius: 6px;
+  padding: 4px 8px;
 }
 
 .jp-FileEditor {
@@ -670,6 +676,11 @@ body[data-jp-theme-name="Deep Space"] {
   background: rgba(5, 6, 10, 0.15);
 }
 
+/* JSON file viewer - semi-opaque background matching Markdown preview */
+.jp-RenderedJSON {
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
 /* Code cells - subtle blue-tinted border */
 .jp-CodeCell {
   border: 1px solid rgba(96, 160, 255, 0.2);
@@ -681,6 +692,35 @@ body[data-jp-theme-name="Deep Space"] {
   background: rgba(5, 6, 10, 0.4);
   border: 1px solid rgba(255, 204, 96, 0.25);
   border-radius: 4px;
+}
+
+/* Console - matching Markdown preview opacity */
+.jp-CodeConsole {
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
+.jp-CodeConsole-content {
+  background: transparent !important;
+}
+
+.jp-CodeConsole-promptCell {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-Cell {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-InputArea {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-OutputArea {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-OutputArea-output {
+  background: rgba(5, 6, 10, 0.4) !important;
 }
 
 /* Document tabs - inactive tabs fully opaque and muted, active tabs lighter */

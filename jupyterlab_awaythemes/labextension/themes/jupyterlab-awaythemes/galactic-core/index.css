@@ -493,11 +493,253 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .jp-Launcher {
-  background: rgba(0, 0, 0, 0.92);
+  background: transparent !important;
+}
+
+.jp-Launcher-cwd {
+  background: rgba(5, 5, 8, 0.8) !important;
+  border-radius: 6px;
+  padding: 4px 8px;
 }
 
 .jp-FileEditor {
   background: rgba(0, 0, 0, 0.94);
+}
+
+/* Fix transparent menus and panels - these need solid backgrounds to be readable */
+
+/* Settings Editor - full panel and all sub-components */
+.jp-SettingsEditor {
+  background: rgba(5, 5, 8, 0.85) !important;
+}
+
+.jp-SettingsEditor-content {
+  background: rgba(5, 5, 8, 0.85) !important;
+}
+
+.jp-SettingsEditor .jp-PluginList {
+  background: rgba(10, 10, 16, 0.92) !important;
+}
+
+/* Settings editor plugin list items and headers */
+.jp-PluginList-entry,
+.jp-PluginList-header {
+  background: rgba(10, 10, 16, 0.72) !important;
+}
+
+.jp-SettingsEditor .jp-SettingsForm {
+  background: rgba(5, 5, 8, 0.85) !important;
+}
+
+/* Settings editor search bar */
+.jp-SettingsEditor .jp-FilterBox input,
+.jp-SettingsEditor .jp-PluginList input {
+  background: rgba(16, 16, 24, 0.88) !important;
+  border: 1px solid rgba(96, 160, 255, 0.3) !important;
+}
+
+.jp-SettingsPanel {
+  background: rgba(5, 5, 8, 0.85) !important;
+}
+
+.jp-PluginEditor {
+  background: rgba(5, 5, 8, 0.85) !important;
+}
+
+/* Language Server Protocol popups */
+.lsp-hover {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+.lsp-completer {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+.jp-LSPStatus-tooltip {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+/* Completer/Autocomplete dropdown */
+.jp-Completer {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+.jp-Completer-list {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+.jp-Completer-item {
+  background: transparent;
+}
+
+.jp-Completer-item.jp-mod-active {
+  background: rgba(96, 160, 255, 0.3);
+}
+
+/* Tooltips and hover info */
+.jp-Tooltip {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+.jp-HoverBox {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+/* Dialogs and modals */
+.jp-Dialog-content {
+  background: rgba(10, 10, 16, 0.99) !important;
+}
+
+/* Markdown preview mode dropdown and similar popups */
+.jp-HTMLSelect select {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+.jp-HTMLSelect option {
+  background: #0a0a10 !important;
+}
+
+/* Command palette */
+.jp-Modal .lm-CommandPalette {
+  background: rgba(5, 5, 8, 0.99) !important;
+}
+
+.lm-CommandPalette-content {
+  background: rgba(5, 5, 8, 0.99) !important;
+}
+
+.lm-CommandPalette-header {
+  background: rgba(16, 16, 24, 0.98) !important;
+}
+
+.lm-CommandPalette-item {
+  background: transparent;
+}
+
+.lm-CommandPalette-item.lm-mod-active {
+  background: rgba(96, 160, 255, 0.3);
+}
+
+/* Property inspector / metadata panel */
+.jp-MetadataForm {
+  background: rgba(5, 5, 8, 0.98) !important;
+}
+
+/* Table of contents */
+.jp-TableOfContents {
+  background: rgba(5, 5, 8, 0.95) !important;
+}
+
+/* Debugger panels */
+.jp-DebuggerSidebar {
+  background: rgba(5, 5, 8, 0.95) !important;
+}
+
+/* Extension manager */
+.jp-extensionmanager-view {
+  background: rgba(5, 5, 8, 0.98) !important;
+}
+
+/* Running panel */
+.jp-RunningSessions {
+  background: rgba(5, 5, 8, 0.95) !important;
+}
+
+/* Kernel selector dropdown */
+.jp-Dialog-body select {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+/* Context menus (right-click menus) */
+.lm-Menu-content {
+  background: #0a0a10 !important;
+}
+
+/* Search panel */
+.jp-DocumentSearch-overlay {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+/* Notification toasts */
+.jp-toast-container {
+  background: rgba(10, 10, 16, 0.98) !important;
+}
+
+/* JSON settings editor raw view */
+.jp-SettingsRawEditor {
+  background: rgba(5, 5, 8, 0.98) !important;
+}
+
+/* Markdown Preview / Rendered Markdown (slightly more opaque than notebooks) */
+.jp-MarkdownViewer {
+  background: rgba(5, 5, 8, 0.88) !important;
+}
+
+.jp-MarkdownViewer-content {
+  background: rgba(5, 5, 8, 0.88) !important;
+}
+
+/* Markdown cells in notebooks - nearly transparent */
+.jp-MarkdownCell .jp-RenderedMarkdown {
+  background: rgba(5, 5, 8, 0.25);
+}
+
+/* JSON file viewer - semi-opaque background matching Markdown preview */
+.jp-RenderedJSON {
+  background: rgba(5, 5, 8, 0.88) !important;
+}
+
+/* Code cells - subtle blue-tinted border */
+.jp-CodeCell {
+  border: 1px solid rgba(96, 160, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Cell outputs - subtle gold-tinted border */
+.jp-OutputArea-output {
+  background: rgba(5, 5, 8, 0.5);
+  border: 1px solid rgba(255, 204, 96, 0.25);
+  border-radius: 4px;
+}
+
+/* Console - matching Markdown preview opacity */
+.jp-CodeConsole {
+  background: rgba(5, 5, 8, 0.88) !important;
+}
+
+.jp-CodeConsole-content {
+  background: transparent !important;
+}
+
+.jp-CodeConsole-promptCell {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-Cell {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-InputArea {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-OutputArea {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-OutputArea-output {
+  background: rgba(5, 5, 8, 0.5) !important;
+}
+
+/* Document tabs - inactive tabs fully opaque and muted, active tabs lighter */
+.lm-TabBar-tab {
+  background: #050508 !important;
+  color: #606070 !important;
+}
+
+.lm-TabBar-tab.lm-mod-current {
+  background: rgba(10, 10, 16, 0.8) !important;
+  color: var(--core-star-white) !important;
 }
 
 
