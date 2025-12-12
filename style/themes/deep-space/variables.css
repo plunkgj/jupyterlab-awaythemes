@@ -364,9 +364,9 @@ distant stars and the soft glow of nebulae.
   --jp-accept-color-hover: var(--space-cyan);
   --jp-accept-color-active: var(--space-blue-hot);
 
-  --jp-reject-color-normal: var(--space-amber);
-  --jp-reject-color-hover: var(--space-star-cream);
-  --jp-reject-color-active: var(--space-amber);
+  --jp-reject-color-normal: #e06060;
+  --jp-reject-color-hover: #f08080;
+  --jp-reject-color-active: #c05050;
 
   --jp-warn-color-normal: var(--space-gold-warm);
   --jp-warn-color-hover: var(--space-gold-bright);
@@ -580,6 +580,34 @@ body[data-jp-theme-name="Deep Space"] {
 /* Dialogs and modals */
 .jp-Dialog-content {
   background: rgba(10, 12, 18, 0.98) !important;
+}
+
+/* Dialog buttons */
+.jp-Dialog-button.jp-mod-accept {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-accept:hover {
+  background-color: #6aade8 !important;
+}
+
+.jp-Dialog-button.jp-mod-reject {
+  background-color: #e06060 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-reject:hover {
+  background-color: #f08080 !important;
+}
+
+.jp-Dialog-button.jp-mod-warn {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-warn:hover {
+  background-color: #6aade8 !important;
 }
 
 /* Markdown preview mode dropdown and similar popups */

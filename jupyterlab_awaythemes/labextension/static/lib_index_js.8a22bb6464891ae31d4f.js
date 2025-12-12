@@ -16,24 +16,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const themes = [
     {
-        id: 'blackhole',
-        name: 'Blackhole',
-        isLight: false,
-        cssPath: 'jupyterlab-awaythemes/blackhole/index.css'
-    },
-    {
-        id: 'aurora',
-        name: 'Aurora',
-        isLight: false,
-        cssPath: 'jupyterlab-awaythemes/aurora/index.css'
-    },
-    {
-        id: 'cascade-night',
-        name: 'Cascade Night',
-        isLight: false,
-        cssPath: 'jupyterlab-awaythemes/cascade-night/index.css'
-    },
-    {
         id: 'deep-space',
         name: 'Deep Space',
         isLight: false,
@@ -46,10 +28,10 @@ const themes = [
         cssPath: 'jupyterlab-awaythemes/galactic-core/index.css'
     },
     {
-        id: 'waterlord',
-        name: 'Waterlord',
+        id: 'astronomical-dawn',
+        name: 'Astronomical Dawn',
         isLight: false,
-        cssPath: 'jupyterlab-awaythemes/waterlord/index.css'
+        cssPath: 'jupyterlab-awaythemes/astronomical-dawn/index.css'
     }
 ];
 /**
@@ -79,4 +61,4 @@ const plugin = {
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.5835be7970c1a6c46dd8.js.map
+//# sourceMappingURL=lib_index_js.8a22bb6464891ae31d4f.js.map

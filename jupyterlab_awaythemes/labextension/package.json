@@ -96,7 +96,7 @@
     "outputDir": "jupyterlab_awaythemes/labextension",
     "themePath": "style/index.css",
     "_build": {
-      "load": "static/remoteEntry.ee8da3e3d90a6730a5c6.js",
+      "load": "static/remoteEntry.070f8984822407874545.js",
       "extension": "./extension"
     }
   },

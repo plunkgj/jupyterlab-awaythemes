@@ -364,9 +364,9 @@ mingle with hot blue stars and golden suns.
   --jp-accept-color-hover: var(--core-cyan);
   --jp-accept-color-active: var(--core-blue-hot);
 
-  --jp-reject-color-normal: var(--core-amber);
-  --jp-reject-color-hover: var(--core-star-cream);
-  --jp-reject-color-active: var(--core-amber);
+  --jp-reject-color-normal: #e06060;
+  --jp-reject-color-hover: #f08080;
+  --jp-reject-color-active: #c05050;
 
   --jp-warn-color-normal: var(--core-gold-warm);
   --jp-warn-color-hover: var(--core-gold-bright);
@@ -588,6 +588,34 @@ body[data-jp-theme-name="Galactic Core"] {
 /* Dialogs and modals */
 .jp-Dialog-content {
   background: rgba(10, 10, 16, 0.99) !important;
+}
+
+/* Dialog buttons */
+.jp-Dialog-button.jp-mod-accept {
+  background-color: #2878e0 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-accept:hover {
+  background-color: #4090f0 !important;
+}
+
+.jp-Dialog-button.jp-mod-reject {
+  background-color: #d83838 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-reject:hover {
+  background-color: #f05050 !important;
+}
+
+.jp-Dialog-button.jp-mod-warn {
+  background-color: #2878e0 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-warn:hover {
+  background-color: #4090f0 !important;
 }
 
 /* Markdown preview mode dropdown and similar popups */

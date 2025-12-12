@@ -4,60 +4,50 @@
 |---------------------------------------------------------------------------- */
 
 /*
-Kaolin Aurora theme - polar lights meets bubblegum
-Blue-leaning color palette inspired by northern lights
+Deep Space - A starfield theme
+
+Floating through the void between galaxies, surrounded by
+distant stars and the soft glow of nebulae.
 */
 
 :root {
-  /* Aurora palette - polar lights with blue emphasis */
+  /* Deep Space palette */
 
-  /* Deep blue backgrounds */
-  --aurora-bg0: #0c0d12;
-  --aurora-bg1: #14161f;
-  --aurora-bg2: #191d26;
-  --aurora-bg3: #202430;
-  --aurora-bg4: #272c3a;
-  --aurora-dim: #08090d;
+  /* The void */
+  --space-void: #000005;
+  --space-deep: #05060a;
+  --space-dark: #0a0c12;
+  --space-nebula: #10121a;
+  --space-dust: #181b24;
 
-  /* Polar light colors - cyans and teals */
-  --aurora-aquamarine: #63e8c1;
-  --aurora-teal: #11ccb2;
-  --aurora-cyan: #62d2db;
-  --aurora-capri: #41b0f3;
+  /* Star colors (matching Galactic Core) */
+  --space-star-white: #f8f8ff;
+  --space-star-cream: #fff8e8;
+  --space-star-gold: #ffd080;
 
-  /* Aurora borealis violets and blues */
-  --aurora-ultramarine: #9587dd;
-  --aurora-violet: #a37acc;
-  --aurora-magenta: #d6a0d1;
+  /* Nebula violet (replaces red - better fit for milky way image) */
+  --space-violet-bright: #c8a8f0;
+  --space-violet-soft: #b090e0;
+  --space-violet-deep: #9070c0;
 
-  /* Warm accents (minimal) */
-  --aurora-orange: #f5c791;
-  --aurora-crimson: #e8616b;
-  --aurora-spring-green: #31e183;
+  /* Blue stars */
+  --space-blue-bright: #60a0ff;
+  --space-blue-hot: #4080ff;
+  --space-blue-deep: #3060d0;
 
-  /* Muted tones */
-  --aurora-comment: #454459;
-  --aurora-comment-alt: #575673;
+  /* Golden/amber stars */
+  --space-gold-bright: #ffe080;
+  --space-gold-warm: #ffcc60;
+  --space-amber: #e0a040;
 
-  --jp-shadow-base-lightness: 32;
-  --jp-shadow-umbra-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.2
-  );
-  --jp-shadow-penumbra-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.14
-  );
-  --jp-shadow-ambient-color: rgba(
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    var(--jp-shadow-base-lightness),
-    0.12
-  );
+  /* Accent colors */
+  --space-cyan: #60e0e0;
+  --space-teal: #40c0b0;
+
+  --jp-shadow-base-lightness: 0;
+  --jp-shadow-umbra-color: rgba(0, 0, 0, 0.3);
+  --jp-shadow-penumbra-color: rgba(0, 0, 0, 0.2);
+  --jp-shadow-ambient-color: rgba(0, 0, 0, 0.15);
   --jp-elevation-z0: none;
   --jp-elevation-z1: 0 2px 1px -1px var(--jp-shadow-umbra-color),
     0 1px 1px 0 var(--jp-shadow-penumbra-color),
@@ -90,28 +80,26 @@ Blue-leaning color palette inspired by northern lights
   /* Borders */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--aurora-bg3);
-  --jp-border-color1: var(--aurora-bg3);
-  --jp-border-color2: var(--aurora-bg3);
-  --jp-border-color3: var(--aurora-bg3);
+  --jp-border-color0: var(--space-dust);
+  --jp-border-color1: var(--space-dust);
+  --jp-border-color2: var(--space-dust);
+  --jp-border-color3: var(--space-dust);
   --jp-border-radius: 6px;
 
   /* UI Fonts */
 
   --jp-ui-font-scale-factor: 1.2;
   --jp-ui-font-size0: 0.8333em;
-  --jp-ui-font-size1: 14px; /* Base font size */
+  --jp-ui-font-size1: 14px;
   --jp-ui-font-size2: 1.2em;
   --jp-ui-font-size3: 1.44em;
   --jp-ui-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica,
     arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  /* Defaults use Material Design specification */
-
-  --jp-ui-font-color0: rgba(240, 246, 252, 1);
-  --jp-ui-font-color1: rgba(240, 246, 252, 1);
-  --jp-ui-font-color2: rgba(240, 246, 252, 0.7);
-  --jp-ui-font-color3: rgba(240, 246, 252, 0.5);
+  --jp-ui-font-color0: var(--space-star-white);
+  --jp-ui-font-color1: var(--space-star-white);
+  --jp-ui-font-color2: var(--space-star-cream);
+  --jp-ui-font-color3: var(--space-gold-warm);
 
   --jp-icon-contrast-color0: var(--jp-ui-font-color0);
   --jp-icon-contrast-color1: var(--jp-ui-font-color1);
@@ -128,13 +116,12 @@ Blue-leaning color palette inspired by northern lights
   --jp-content-line-height: 1.6;
   --jp-content-font-scale-factor: 1.2;
   --jp-content-font-size0: 0.8333em;
-  --jp-content-font-size1: 14px; /* Base font size */
+  --jp-content-font-size1: 14px;
   --jp-content-font-size2: 1.2em;
   --jp-content-font-size3: 1.44em;
   --jp-content-font-size4: 1.728em;
   --jp-content-font-size5: 2.0736em;
 
-  /* This gives a magnification of about 125% in presentation mode over normal. */
   --jp-content-presentation-font-size1: 17px;
 
   --jp-content-heading-line-height: 1;
@@ -142,12 +129,11 @@ Blue-leaning color palette inspired by northern lights
   --jp-content-heading-margin-bottom: 0.8em;
   --jp-content-heading-font-weight: 500;
 
-  /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1);
-  --jp-content-font-color1: rgba(255, 255, 255, 1);
-  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
-  --jp-content-link-color: var(--aurora-aquamarine);
+  --jp-content-font-color0: var(--space-star-white);
+  --jp-content-font-color1: var(--space-star-white);
+  --jp-content-font-color2: var(--space-star-cream);
+  --jp-content-font-color3: var(--space-gold-warm);
+  --jp-content-link-color: var(--space-cyan);
 
   --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
     helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -156,25 +142,23 @@ Blue-leaning color palette inspired by northern lights
   /* Code Fonts */
 
   --jp-code-font-size: 13px;
-  --jp-code-line-height: 1.3077; /* 17px for 13px base */
-  --jp-code-padding: 0.385em; /* 5px for 13px base */
+  --jp-code-line-height: 1.3077;
+  --jp-code-padding: 0.385em;
   --jp-code-font-family-default: menlo, consolas, 'DejaVu Sans Mono', monospace;
   --jp-code-font-family: var(--jp-code-font-family-default);
 
-  /* This gives a magnification of about 125% in presentation mode over normal. */
   --jp-code-presentation-font-size: 16px;
 
-  /* may need to tweak cursor width if you change font size */
   --jp-code-cursor-width0: 1.4px;
   --jp-code-cursor-width1: 2px;
   --jp-code-cursor-width2: 4px;
 
-  /* Layout - deep blue backgrounds */
-  --jp-layout-color0: var(--aurora-bg0);
-  --jp-layout-color1: var(--aurora-bg1);
-  --jp-layout-color2: var(--aurora-bg2);
-  --jp-layout-color3: var(--aurora-bg3);
-  --jp-layout-color4: var(--aurora-bg4);
+  /* Layout - transparent to show starfield */
+  --jp-layout-color0: transparent;
+  --jp-layout-color1: transparent;
+  --jp-layout-color2: rgba(10, 12, 18, 0.7);
+  --jp-layout-color3: rgba(16, 18, 26, 0.8);
+  --jp-layout-color4: rgba(24, 27, 36, 0.85);
 
   /* Inverse Layout */
 
@@ -184,39 +168,39 @@ Blue-leaning color palette inspired by northern lights
   --jp-inverse-layout-color3: var(--md-grey-400);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
-  /* Brand/accent - ultramarine and cyan */
+  /* Brand/accent - blue stars */
 
-  --jp-brand-color0: var(--aurora-ultramarine);
-  --jp-brand-color1: var(--aurora-ultramarine);
-  --jp-brand-color2: var(--aurora-violet);
-  --jp-brand-color3: var(--aurora-violet);
+  --jp-brand-color0: var(--space-blue-bright);
+  --jp-brand-color1: var(--space-blue-bright);
+  --jp-brand-color2: var(--space-blue-hot);
+  --jp-brand-color3: var(--space-blue-deep);
 
-  --jp-accent-color0: var(--aurora-aquamarine);
-  --jp-accent-color1: var(--aurora-aquamarine);
-  --jp-accent-color2: var(--aurora-teal);
-  --jp-accent-color3: var(--aurora-teal);
+  --jp-accent-color0: var(--space-cyan);
+  --jp-accent-color1: var(--space-cyan);
+  --jp-accent-color2: var(--space-teal);
+  --jp-accent-color3: var(--space-teal);
 
-  /* State colors (warn, error, success, info) */
+  /* State colors */
 
-  --jp-warn-color0: var(--aurora-orange);
-  --jp-warn-color1: var(--aurora-orange);
-  --jp-warn-color2: var(--aurora-orange);
-  --jp-warn-color3: var(--aurora-orange);
+  --jp-warn-color0: var(--space-gold-warm);
+  --jp-warn-color1: var(--space-gold-warm);
+  --jp-warn-color2: var(--space-amber);
+  --jp-warn-color3: var(--space-amber);
 
-  --jp-error-color0: var(--aurora-crimson);
-  --jp-error-color1: var(--aurora-crimson);
-  --jp-error-color2: var(--aurora-crimson);
-  --jp-error-color3: var(--aurora-crimson);
+  --jp-error-color0: #ff7070;
+  --jp-error-color1: #ff7070;
+  --jp-error-color2: #e06060;
+  --jp-error-color3: #c05050;
 
-  --jp-success-color0: var(--aurora-spring-green);
-  --jp-success-color1: var(--aurora-spring-green);
-  --jp-success-color2: var(--aurora-spring-green);
-  --jp-success-color3: var(--aurora-spring-green);
+  --jp-success-color0: var(--space-teal);
+  --jp-success-color1: var(--space-teal);
+  --jp-success-color2: var(--space-cyan);
+  --jp-success-color3: var(--space-cyan);
 
-  --jp-info-color0: var(--aurora-capri);
-  --jp-info-color1: var(--aurora-capri);
-  --jp-info-color2: var(--aurora-capri);
-  --jp-info-color3: var(--aurora-capri);
+  --jp-info-color0: var(--space-blue-bright);
+  --jp-info-color1: var(--space-blue-bright);
+  --jp-info-color2: var(--space-blue-hot);
+  --jp-info-color3: var(--space-blue-deep);
 
   /* Cell specific styles */
 
@@ -226,10 +210,10 @@ Blue-leaning color palette inspired by northern lights
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
-  --jp-cell-editor-background: var(--aurora-bg1);
-  --jp-cell-editor-border-color: var(--aurora-bg3);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--aurora-ultramarine);
-  --jp-cell-editor-active-background: var(--jp-layout-color0);
+  --jp-cell-editor-background: rgba(5, 6, 10, 0.8);
+  --jp-cell-editor-border-color: rgba(24, 27, 36, 0.6);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--space-blue-bright);
+  --jp-cell-editor-active-background: rgba(0, 0, 5, 0.85);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 64px;
@@ -237,27 +221,27 @@ Blue-leaning color palette inspired by northern lights
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.8;
-  --jp-cell-prompt-not-active-font-color: var(--aurora-comment);
+  --jp-cell-prompt-not-active-font-color: var(--space-gold-warm);
 
-  /* Input prompt - aquamarine (polar lights) */
-  --jp-cell-inprompt-font-color: var(--aurora-aquamarine);
+  /* Input prompt - blue star */
+  --jp-cell-inprompt-font-color: var(--space-blue-bright);
 
-  /* Output prompt - magenta */
-  --jp-cell-outprompt-font-color: var(--aurora-magenta);
+  /* Output prompt - gold star */
+  --jp-cell-outprompt-font-color: var(--space-gold-bright);
 
   /* Notebook specific styles */
 
   --jp-notebook-padding: 10px;
-  --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
+  --jp-notebook-select-background: rgba(10, 12, 18, 0.7);
+  --jp-notebook-multiselected-color: rgba(74, 127, 255, 0.24);
 
   --jp-notebook-scroll-padding: calc(
     100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
       var(--jp-code-padding) - var(--jp-cell-padding) - 1px
   );
 
-  --jp-scrollbar-background-color: var(--aurora-bg2);
-  --jp-scrollbar-thumb-color: 39, 44, 58; /* need to specify thumb color as an RGB triplet */
+  --jp-scrollbar-background-color: rgba(10, 12, 18, 0.5);
+  --jp-scrollbar-thumb-color: 40, 45, 60;
 
   --jp-scrollbar-endpad: 3px;
   --jp-scrollbar-thumb-margin: 3.5px;
@@ -265,13 +249,13 @@ Blue-leaning color palette inspired by northern lights
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: rgba(232, 97, 107, 0.28);
-  --jp-rendermime-table-row-background: var(--md-grey-900);
-  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
+  --jp-rendermime-error-background: rgba(224, 85, 85, 0.28);
+  --jp-rendermime-table-row-background: rgba(10, 12, 18, 0.6);
+  --jp-rendermime-table-row-hover-background: rgba(74, 127, 255, 0.2);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.6);
+  --jp-dialog-background: rgba(0, 0, 0, 0.7);
 
   /* Console specific styles */
 
@@ -281,10 +265,10 @@ Blue-leaning color palette inspired by northern lights
 
   --jp-toolbar-border-color: var(--jp-border-color2);
   --jp-toolbar-micro-height: 8px;
-  --jp-toolbar-background: var(--jp-layout-color1);
+  --jp-toolbar-background: rgba(10, 12, 18, 0.85);
   --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--jp-layout-color0);
+  --jp-toolbar-active-background: rgba(5, 6, 10, 0.9);
 
   /* Statusbar specific styles */
 
@@ -292,46 +276,46 @@ Blue-leaning color palette inspired by northern lights
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--aurora-ultramarine);
-  --jp-input-active-background: var(--jp-layout-color0);
-  --jp-input-hover-background: var(--jp-layout-color2);
-  --jp-input-background: var(--md-grey-800);
-  --jp-input-border-color: var(--jp-inverse-border-color);
+  --jp-input-box-shadow: inset 0 0 2px var(--space-blue-bright);
+  --jp-input-active-background: rgba(5, 6, 10, 0.9);
+  --jp-input-hover-background: rgba(16, 18, 26, 0.8);
+  --jp-input-background: rgba(10, 12, 18, 0.8);
+  --jp-input-border-color: var(--space-dust);
   --jp-input-active-border-color: var(--jp-brand-color1);
-  --jp-input-active-box-shadow-color: rgba(149, 135, 221, 0.3);
+  --jp-input-active-box-shadow-color: rgba(74, 127, 255, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--jp-layout-color2);
-  --jp-editor-selected-focused-background: rgba(99, 232, 193, 0.2);
+  --jp-editor-selected-background: rgba(74, 127, 255, 0.2);
+  --jp-editor-selected-focused-background: rgba(74, 127, 255, 0.3);
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
-  /* Code mirror specific styles - Aurora syntax */
+  /* Code mirror specific styles - Deep Space syntax (matching Galactic Core) */
 
-  --jp-mirror-editor-keyword-color: var(--aurora-ultramarine);   /* Keywords - blue-violet */
-  --jp-mirror-editor-atom-color: var(--aurora-teal);             /* Atoms - teal */
-  --jp-mirror-editor-number-color: var(--aurora-magenta);        /* Numbers - magenta accent */
-  --jp-mirror-editor-def-color: var(--aurora-cyan);              /* Function definitions - cyan */
-  --jp-mirror-editor-variable-color: var(--aurora-capri);        /* Variables - capri blue */
-  --jp-mirror-editor-variable-2-color: var(--aurora-capri);
-  --jp-mirror-editor-variable-3-color: var(--aurora-teal);
-  --jp-mirror-editor-punctuation-color: var(--aurora-comment);
-  --jp-mirror-editor-property-color: var(--aurora-capri);        /* Properties */
-  --jp-mirror-editor-operator-color: var(--aurora-comment-alt);  /* Operators */
-  --jp-mirror-editor-comment-color: var(--aurora-comment);       /* Comments - muted */
-  --jp-mirror-editor-string-color: var(--aurora-cyan);           /* Strings - cyan */
-  --jp-mirror-editor-string-2-color: var(--aurora-aquamarine);   /* Alt strings */
-  --jp-mirror-editor-meta-color: var(--aurora-violet);           /* Meta */
-  --jp-mirror-editor-qualifier-color: var(--aurora-comment);
-  --jp-mirror-editor-builtin-color: var(--aurora-aquamarine);    /* Builtins - aquamarine */
-  --jp-mirror-editor-bracket-color: var(--aurora-comment-alt);   /* Brackets */
-  --jp-mirror-editor-tag-color: var(--aurora-teal);              /* Tags */
-  --jp-mirror-editor-attribute-color: var(--aurora-violet);      /* Attributes */
-  --jp-mirror-editor-header-color: var(--aurora-ultramarine);    /* Headers */
-  --jp-mirror-editor-quote-color: var(--aurora-orange);          /* Quotes - warm accent */
-  --jp-mirror-editor-link-color: var(--aurora-aquamarine);       /* Links */
-  --jp-mirror-editor-error-color: var(--aurora-crimson);         /* Errors */
-  --jp-mirror-editor-hr-color: var(--aurora-comment);
+  --jp-mirror-editor-keyword-color: var(--space-violet-bright);   /* Keywords - nebula violet */
+  --jp-mirror-editor-atom-color: var(--space-cyan);               /* Atoms - cyan */
+  --jp-mirror-editor-number-color: var(--space-gold-bright);      /* Numbers - gold star */
+  --jp-mirror-editor-def-color: var(--space-blue-bright);         /* Definitions - blue star */
+  --jp-mirror-editor-variable-color: var(--space-star-white);     /* Variables - white star */
+  --jp-mirror-editor-variable-2-color: var(--space-star-cream);   /* Var2 - cream */
+  --jp-mirror-editor-variable-3-color: var(--space-cyan);         /* Var3 - cyan */
+  --jp-mirror-editor-punctuation-color: #e0e0f0;                  /* Punctuation - bright */
+  --jp-mirror-editor-property-color: var(--space-blue-bright);    /* Properties - blue star */
+  --jp-mirror-editor-operator-color: #e0e0f0;                     /* Operators - bright */
+  --jp-mirror-editor-comment-color: var(--space-amber);           /* Comments - warm amber */
+  --jp-mirror-editor-string-color: var(--space-teal);             /* Strings - teal */
+  --jp-mirror-editor-string-2-color: var(--space-gold-warm);      /* Alt strings - warm gold */
+  --jp-mirror-editor-meta-color: var(--space-violet-soft);        /* Meta - violet */
+  --jp-mirror-editor-qualifier-color: var(--space-gold-warm);     /* Qualifier - gold */
+  --jp-mirror-editor-builtin-color: var(--space-gold-bright);     /* Builtins - bright gold */
+  --jp-mirror-editor-bracket-color: #e0e0f0;                      /* Brackets - bright */
+  --jp-mirror-editor-tag-color: var(--space-violet-bright);       /* Tags - violet */
+  --jp-mirror-editor-attribute-color: var(--space-gold-warm);     /* Attributes - gold */
+  --jp-mirror-editor-header-color: var(--space-blue-bright);      /* Headers - blue star */
+  --jp-mirror-editor-quote-color: var(--space-teal);              /* Quotes - teal */
+  --jp-mirror-editor-link-color: var(--space-cyan);               /* Links - cyan */
+  --jp-mirror-editor-error-color: #ff7070;                        /* Errors - coral (keep distinct) */
+  --jp-mirror-editor-hr-color: var(--space-amber);                /* HR - amber */
 
   /* User colors */
 
@@ -355,7 +339,7 @@ Blue-leaning color palette inspired by northern lights
   --jp-text-editor-icon-color: var(--md-grey-200);
   --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--aurora-aquamarine);
+  --jp-switch-true-position-color: var(--space-blue-bright);
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 
   /* Vega extension styles */
@@ -370,23 +354,45 @@ Blue-leaning color palette inspired by northern lights
   --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: var(--aurora-capri);
+  --jp-search-selected-match-background-color: var(--space-gold-bright);
   --jp-search-selected-match-color: black;
-  --jp-search-unselected-match-background-color: var(--aurora-violet);
+  --jp-search-unselected-match-background-color: var(--space-blue-hot);
   --jp-search-unselected-match-color: var(--jp-ui-font-color0);
 
   /* Button colors */
-  --jp-accept-color-normal: var(--aurora-aquamarine);
-  --jp-accept-color-hover: var(--aurora-teal);
-  --jp-accept-color-active: var(--aurora-spring-green);
+  --jp-accept-color-normal: var(--space-blue-bright);
+  --jp-accept-color-hover: var(--space-cyan);
+  --jp-accept-color-active: var(--space-blue-hot);
 
-  --jp-reject-color-normal: var(--aurora-comment);
-  --jp-reject-color-hover: var(--aurora-comment-alt);
-  --jp-reject-color-active: var(--aurora-comment);
+  --jp-reject-color-normal: #e06060;
+  --jp-reject-color-hover: #f08080;
+  --jp-reject-color-active: #c05050;
 
-  --jp-warn-color-normal: var(--aurora-orange);
-  --jp-warn-color-hover: var(--aurora-crimson);
-  --jp-warn-color-active: var(--aurora-crimson);
+  --jp-warn-color-normal: var(--space-gold-warm);
+  --jp-warn-color-hover: var(--space-gold-bright);
+  --jp-warn-color-active: #ff7070;
+}
+
+/* Starfield background */
+body[data-jp-theme-name="Deep Space"] {
+  background-color: #000005 !important;
+  background-image: url(42973e05358425204965.jpg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+}
+
+.jp-LabShell {
+  background: transparent;
+}
+
+.jp-Notebook {
+  background: rgba(5, 6, 10, 0.75);
+}
+
+.jp-SideBar {
+  background: rgba(5, 6, 10, 0.85);
 }
 
 .jp-InputArea-editor {
@@ -408,34 +414,352 @@ Blue-leaning color palette inspired by northern lights
   color: white;
 }
 
+.jp-DirListing {
+  background: rgba(5, 6, 10, 0.7);
+}
+
 .jp-LauncherCard {
-  background: var(--jp-layout-color2);
+  background: rgba(16, 18, 26, 0.8);
   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition-property: color, background-color, border-color;
 }
 
 .jp-LauncherCard:hover {
-  background: var(--jp-layout-color4);
+  background: rgba(24, 27, 36, 0.9);
   transition-duration: 0.1s;
-  border-color: var(--aurora-aquamarine);
+  border-color: var(--space-blue-bright);
 }
 
 .jp-SideBar.lm-TabBar .lm-TabBar-tab.lm-mod-current {
   border-top-style: solid;
-  border-top-color: var(--aurora-aquamarine);
+  border-top-color: var(--space-blue-bright);
   border-top-width: 3px; /* stylelint-disable-line */
 }
 
 .CodeMirror-selected {
-  background-color: rgba(99, 232, 193, 0.2) !important; /* aquamarine selection */
+  background-color: rgba(74, 127, 255, 0.25) !important;
 }
 
 .widget-slider .ui-slider .ui-slider-handle {
-  background-color: var(--aurora-aquamarine);
+  background-color: var(--space-blue-bright);
 }
 
 .widget-slider .ui-slider {
-  background-color: var(--jp-layout-color4);
+  background-color: rgba(24, 27, 36, 0.8);
+}
+
+#jp-menu-panel {
+  background: #05060a;
+}
+
+.lm-MenuBar {
+  background: #05060a;
+}
+
+.lm-MenuBar-item.lm-mod-active {
+  background: rgba(74, 127, 255, 0.3);
+}
+
+.lm-Menu {
+  background: #0a0c12 !important;
+}
+
+.lm-Menu-item.lm-mod-active {
+  background: rgba(74, 127, 255, 0.3);
+}
+
+.lm-Menu-content {
+  background: #0a0c12 !important;
+}
+
+.jp-MainMenu .lm-Menu {
+  background: #0a0c12 !important;
+}
+
+#jp-top-panel {
+  background: rgba(5, 6, 10, 0.9);
+}
+
+#jp-bottom-panel {
+  background: rgba(5, 6, 10, 0.9);
+}
+
+.jp-Launcher {
+  background: transparent !important;
+}
+
+.jp-Launcher-cwd {
+  background: rgba(5, 6, 10, 0.7) !important;
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+
+.jp-FileEditor {
+  background: rgba(0, 0, 5, 0.9);
+}
+
+/* Fix transparent menus and panels - these need solid backgrounds to be readable */
+
+/* Settings Editor - full panel and all sub-components (0.75 to match notebooks) */
+.jp-SettingsEditor {
+  background: rgba(5, 6, 10, 0.75) !important;
+}
+
+.jp-SettingsEditor-content {
+  background: rgba(5, 6, 10, 0.75) !important;
+}
+
+.jp-SettingsEditor .jp-PluginList {
+  background: rgba(10, 12, 18, 0.85) !important;
+}
+
+/* Settings editor plugin list items and headers */
+.jp-PluginList-entry,
+.jp-PluginList-header {
+  background: rgba(10, 12, 18, 0.62) !important;
+}
+
+.jp-SettingsEditor .jp-SettingsForm {
+  background: rgba(5, 6, 10, 0.75) !important;
+}
+
+/* Settings editor search bar */
+.jp-SettingsEditor .jp-FilterBox input,
+.jp-SettingsEditor .jp-PluginList input {
+  background: rgba(16, 18, 26, 0.8) !important;
+  border: 1px solid rgba(96, 160, 255, 0.3) !important;
+}
+
+.jp-SettingsPanel {
+  background: rgba(5, 6, 10, 0.75) !important;
+}
+
+.jp-PluginEditor {
+  background: rgba(5, 6, 10, 0.75) !important;
+}
+
+/* Language Server Protocol popups */
+.lsp-hover {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.lsp-completer {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.jp-LSPStatus-tooltip {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+/* Completer/Autocomplete dropdown */
+.jp-Completer {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.jp-Completer-list {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.jp-Completer-item {
+  background: transparent;
+}
+
+.jp-Completer-item.jp-mod-active {
+  background: rgba(74, 127, 255, 0.3);
+}
+
+/* Tooltips and hover info */
+.jp-Tooltip {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.jp-HoverBox {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+/* Dialogs and modals */
+.jp-Dialog-content {
+  background: rgba(10, 12, 18, 0.98) !important;
+}
+
+/* Dialog buttons */
+.jp-Dialog-button.jp-mod-accept {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-accept:hover {
+  background-color: #6aade8 !important;
+}
+
+.jp-Dialog-button.jp-mod-reject {
+  background-color: #e06060 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-reject:hover {
+  background-color: #f08080 !important;
+}
+
+.jp-Dialog-button.jp-mod-warn {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-warn:hover {
+  background-color: #6aade8 !important;
+}
+
+/* Markdown preview mode dropdown and similar popups */
+.jp-HTMLSelect select {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+.jp-HTMLSelect option {
+  background: #0a0c12 !important;
+}
+
+/* Command palette */
+.jp-Modal .lm-CommandPalette {
+  background: rgba(5, 6, 10, 0.98) !important;
+}
+
+.lm-CommandPalette-content {
+  background: rgba(5, 6, 10, 0.98) !important;
+}
+
+.lm-CommandPalette-header {
+  background: rgba(16, 18, 26, 0.95) !important;
+}
+
+.lm-CommandPalette-item {
+  background: transparent;
+}
+
+.lm-CommandPalette-item.lm-mod-active {
+  background: rgba(74, 127, 255, 0.3);
+}
+
+/* Property inspector / metadata panel */
+.jp-MetadataForm {
+  background: rgba(5, 6, 10, 0.95) !important;
+}
+
+/* Table of contents */
+.jp-TableOfContents {
+  background: rgba(5, 6, 10, 0.9) !important;
+}
+
+/* Debugger panels */
+.jp-DebuggerSidebar {
+  background: rgba(5, 6, 10, 0.9) !important;
+}
+
+/* Extension manager */
+.jp-extensionmanager-view {
+  background: rgba(5, 6, 10, 0.95) !important;
+}
+
+/* Running panel */
+.jp-RunningSessions {
+  background: rgba(5, 6, 10, 0.9) !important;
+}
+
+/* Kernel selector dropdown */
+.jp-Dialog-body select {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+/* Context menus (right-click menus) */
+.lm-Menu-content {
+  background: #0a0c12 !important;
+}
+
+/* Search panel */
+.jp-DocumentSearch-overlay {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+/* Notification toasts */
+.jp-toast-container {
+  background: rgba(10, 12, 18, 0.95) !important;
+}
+
+/* JSON settings editor raw view */
+.jp-SettingsRawEditor {
+  background: rgba(5, 6, 10, 0.95) !important;
+}
+
+/* Markdown Preview / Rendered Markdown (slightly more opaque than notebooks) */
+.jp-MarkdownViewer {
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
+.jp-MarkdownViewer-content {
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
+/* Markdown cells in notebooks - nearly transparent */
+.jp-MarkdownCell .jp-RenderedMarkdown {
+  background: rgba(5, 6, 10, 0.15);
+}
+
+/* JSON file viewer - semi-opaque background matching Markdown preview */
+.jp-RenderedJSON {
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
+/* Code cells - subtle blue-tinted border */
+.jp-CodeCell {
+  border: 1px solid rgba(96, 160, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Cell outputs - subtle gold-tinted border */
+.jp-OutputArea-output {
+  background: rgba(5, 6, 10, 0.4);
+  border: 1px solid rgba(255, 204, 96, 0.25);
+  border-radius: 4px;
+}
+
+/* Console - matching Markdown preview opacity */
+.jp-CodeConsole {
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
+.jp-CodeConsole-content {
+  background: transparent !important;
+}
+
+.jp-CodeConsole-promptCell {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-Cell {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-InputArea {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-OutputArea {
+  background: transparent !important;
+}
+
+.jp-CodeConsole .jp-OutputArea-output {
+  background: rgba(5, 6, 10, 0.4) !important;
+}
+
+/* Document tabs - inactive tabs fully opaque and muted, active tabs lighter */
+.lm-TabBar-tab {
+  background: #05060a !important;
+  color: #606070 !important;
+}
+
+.lm-TabBar-tab.lm-mod-current {
+  background: rgba(10, 12, 18, 0.7) !important;
+  color: var(--space-star-white) !important;
 }
 
 /* Set the default typography for monospace elements */
@@ -458,6 +782,4 @@ pre {
  *
  * To switch themes, comment/uncomment the import below:
  */
-
-/* @import url('./themes/blackhole/index.css'); */
 

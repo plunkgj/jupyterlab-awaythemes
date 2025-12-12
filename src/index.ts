@@ -18,24 +18,6 @@ interface IThemeDefinition {
 
 const themes: IThemeDefinition[] = [
   {
-    id: 'blackhole',
-    name: 'Blackhole',
-    isLight: false,
-    cssPath: 'jupyterlab-awaythemes/blackhole/index.css'
-  },
-  {
-    id: 'aurora',
-    name: 'Aurora',
-    isLight: false,
-    cssPath: 'jupyterlab-awaythemes/aurora/index.css'
-  },
-  {
-    id: 'cascade-night',
-    name: 'Cascade Night',
-    isLight: false,
-    cssPath: 'jupyterlab-awaythemes/cascade-night/index.css'
-  },
-  {
     id: 'deep-space',
     name: 'Deep Space',
     isLight: false,
@@ -48,10 +30,10 @@ const themes: IThemeDefinition[] = [
     cssPath: 'jupyterlab-awaythemes/galactic-core/index.css'
   },
   {
-    id: 'waterlord',
-    name: 'Waterlord',
+    id: 'astronomical-dawn',
+    name: 'Astronomical Dawn',
     isLight: false,
-    cssPath: 'jupyterlab-awaythemes/waterlord/index.css'
+    cssPath: 'jupyterlab-awaythemes/astronomical-dawn/index.css'
   }
 ];
 

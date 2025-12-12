@@ -4,50 +4,52 @@
 |---------------------------------------------------------------------------- */
 
 /*
-Galactic Core - A dense starfield theme
+Astronomical Dawn - A twilight horizon theme
 
-The blazing heart of a globular cluster, where ancient red giants
-mingle with hot blue stars and golden suns.
+The quiet moment before sunrise, when stars still linger above
+silhouetted mountains and deep indigo sky meets the first
+golden light on the horizon.
 */
 
 :root {
-  /* Galactic Core palette */
+  /* Astronomical Dawn palette */
 
-  /* The void */
-  --core-void: #000000;
-  --core-deep: #050508;
-  --core-dark: #0a0a10;
-  --core-shadow: #101018;
-  --core-dust: #181820;
+  /* The dark silhouettes */
+  --dawn-void: #000008;
+  --dawn-deep: #040810;
+  --dawn-dark: #081018;
+  --dawn-shadow: #101828;
+  --dawn-dust: #182030;
 
-  /* Star colors from the image */
-  --core-star-white: #f8f8ff;
-  --core-star-cream: #fff8e8;
-  --core-star-gold: #ffd080;
+  /* Star and text colors */
+  --dawn-star-white: #f0f4f8;
+  --dawn-star-soft: #d8e0e8;
+  --dawn-cloud-silver: #a0b0c8;
 
-  /* Red giant stars */
-  --core-red-bright: #ff6050;
-  --core-red-giant: #e84030;
-  --core-red-deep: #c03020;
+  /* Exotic blues - the twilight sky */
+  --dawn-azure: #60a0ff;
+  --dawn-electric: #4080e0;
+  --dawn-sapphire: #3060c0;
 
-  /* Blue stars */
-  --core-blue-bright: #60a0ff;
-  --core-blue-hot: #4080ff;
-  --core-blue-deep: #3060d0;
+  /* Deep night purples - pre-dawn sky */
+  --dawn-violet: #a080e0;
+  --dawn-purple: #8060c0;
+  --dawn-indigo: #5040a0;
 
-  /* Golden/amber stars */
-  --core-gold-bright: #ffe080;
-  --core-gold-warm: #ffcc60;
-  --core-amber: #e0a040;
+  /* Sky blues - twilight colors */
+  --dawn-sky-bright: #5090d0;
+  --dawn-sky-twilight: #3070b0;
+  --dawn-sky-deep: #205090;
 
-  /* Accent colors */
-  --core-cyan: #60e0e0;
-  --core-teal: #40c0b0;
+  /* Yellow/gold highlights - horizon glow */
+  --dawn-gold: #f0d070;
+  --dawn-amber: #d0b050;
+  --dawn-honey: #c0a040;
 
   --jp-shadow-base-lightness: 0;
-  --jp-shadow-umbra-color: rgba(0, 0, 0, 0.4);
-  --jp-shadow-penumbra-color: rgba(0, 0, 0, 0.3);
-  --jp-shadow-ambient-color: rgba(0, 0, 0, 0.2);
+  --jp-shadow-umbra-color: rgba(0, 0, 0, 0.3);
+  --jp-shadow-penumbra-color: rgba(0, 0, 0, 0.2);
+  --jp-shadow-ambient-color: rgba(0, 0, 0, 0.15);
   --jp-elevation-z0: none;
   --jp-elevation-z1: 0 2px 1px -1px var(--jp-shadow-umbra-color),
     0 1px 1px 0 var(--jp-shadow-penumbra-color),
@@ -80,10 +82,10 @@ mingle with hot blue stars and golden suns.
   /* Borders */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--core-dust);
-  --jp-border-color1: var(--core-dust);
-  --jp-border-color2: var(--core-dust);
-  --jp-border-color3: var(--core-dust);
+  --jp-border-color0: var(--dawn-dust);
+  --jp-border-color1: var(--dawn-dust);
+  --jp-border-color2: var(--dawn-dust);
+  --jp-border-color3: var(--dawn-dust);
   --jp-border-radius: 6px;
 
   /* UI Fonts */
@@ -96,10 +98,10 @@ mingle with hot blue stars and golden suns.
   --jp-ui-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', helvetica,
     arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
-  --jp-ui-font-color0: var(--core-star-white);
-  --jp-ui-font-color1: var(--core-star-white);
-  --jp-ui-font-color2: var(--core-star-cream);
-  --jp-ui-font-color3: var(--core-gold-warm);
+  --jp-ui-font-color0: var(--dawn-star-white);
+  --jp-ui-font-color1: var(--dawn-star-white);
+  --jp-ui-font-color2: var(--dawn-star-soft);
+  --jp-ui-font-color3: var(--dawn-cloud-silver);
 
   --jp-icon-contrast-color0: var(--jp-ui-font-color0);
   --jp-icon-contrast-color1: var(--jp-ui-font-color1);
@@ -129,11 +131,11 @@ mingle with hot blue stars and golden suns.
   --jp-content-heading-margin-bottom: 0.8em;
   --jp-content-heading-font-weight: 500;
 
-  --jp-content-font-color0: var(--core-star-white);
-  --jp-content-font-color1: var(--core-star-white);
-  --jp-content-font-color2: var(--core-star-cream);
-  --jp-content-font-color3: var(--core-gold-warm);
-  --jp-content-link-color: var(--core-cyan);
+  --jp-content-font-color0: var(--dawn-star-white);
+  --jp-content-font-color1: var(--dawn-star-white);
+  --jp-content-font-color2: var(--dawn-star-soft);
+  --jp-content-font-color3: var(--dawn-cloud-silver);
+  --jp-content-link-color: var(--dawn-azure);
 
   --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
     helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -153,12 +155,12 @@ mingle with hot blue stars and golden suns.
   --jp-code-cursor-width1: 2px;
   --jp-code-cursor-width2: 4px;
 
-  /* Layout - transparent to show starfield */
+  /* Layout - transparent to show dawn background */
   --jp-layout-color0: transparent;
   --jp-layout-color1: transparent;
-  --jp-layout-color2: rgba(10, 10, 16, 0.7);
-  --jp-layout-color3: rgba(16, 16, 24, 0.8);
-  --jp-layout-color4: rgba(24, 24, 32, 0.85);
+  --jp-layout-color2: rgba(8, 16, 24, 0.7);
+  --jp-layout-color3: rgba(16, 24, 40, 0.8);
+  --jp-layout-color4: rgba(24, 32, 48, 0.85);
 
   /* Inverse Layout */
 
@@ -168,39 +170,39 @@ mingle with hot blue stars and golden suns.
   --jp-inverse-layout-color3: var(--md-grey-400);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
-  /* Brand/accent - blue stars */
+  /* Brand/accent - azure blues */
 
-  --jp-brand-color0: var(--core-blue-bright);
-  --jp-brand-color1: var(--core-blue-bright);
-  --jp-brand-color2: var(--core-blue-hot);
-  --jp-brand-color3: var(--core-blue-deep);
+  --jp-brand-color0: var(--dawn-electric);
+  --jp-brand-color1: var(--dawn-electric);
+  --jp-brand-color2: var(--dawn-sapphire);
+  --jp-brand-color3: var(--dawn-sky-deep);
 
-  --jp-accent-color0: var(--core-cyan);
-  --jp-accent-color1: var(--core-cyan);
-  --jp-accent-color2: var(--core-teal);
-  --jp-accent-color3: var(--core-teal);
+  --jp-accent-color0: var(--dawn-azure);
+  --jp-accent-color1: var(--dawn-azure);
+  --jp-accent-color2: var(--dawn-electric);
+  --jp-accent-color3: var(--dawn-sapphire);
 
   /* State colors */
 
-  --jp-warn-color0: var(--core-gold-warm);
-  --jp-warn-color1: var(--core-gold-warm);
-  --jp-warn-color2: var(--core-amber);
-  --jp-warn-color3: var(--core-amber);
+  --jp-warn-color0: var(--dawn-gold);
+  --jp-warn-color1: var(--dawn-gold);
+  --jp-warn-color2: var(--dawn-amber);
+  --jp-warn-color3: var(--dawn-amber);
 
-  --jp-error-color0: var(--core-red-bright);
-  --jp-error-color1: var(--core-red-bright);
-  --jp-error-color2: var(--core-red-giant);
-  --jp-error-color3: var(--core-red-deep);
+  --jp-error-color0: #e07070;
+  --jp-error-color1: #e07070;
+  --jp-error-color2: #c06060;
+  --jp-error-color3: #a05050;
 
-  --jp-success-color0: var(--core-teal);
-  --jp-success-color1: var(--core-teal);
-  --jp-success-color2: var(--core-cyan);
-  --jp-success-color3: var(--core-cyan);
+  --jp-success-color0: var(--dawn-azure);
+  --jp-success-color1: var(--dawn-azure);
+  --jp-success-color2: var(--dawn-electric);
+  --jp-success-color3: var(--dawn-sapphire);
 
-  --jp-info-color0: var(--core-blue-bright);
-  --jp-info-color1: var(--core-blue-bright);
-  --jp-info-color2: var(--core-blue-hot);
-  --jp-info-color3: var(--core-blue-deep);
+  --jp-info-color0: var(--dawn-sky-bright);
+  --jp-info-color1: var(--dawn-sky-bright);
+  --jp-info-color2: var(--dawn-sky-twilight);
+  --jp-info-color3: var(--dawn-sky-deep);
 
   /* Cell specific styles */
 
@@ -210,10 +212,10 @@ mingle with hot blue stars and golden suns.
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
 
-  --jp-cell-editor-background: rgba(0, 0, 0, 0.92);
-  --jp-cell-editor-border-color: rgba(24, 24, 32, 0.6);
-  --jp-cell-editor-box-shadow: inset 0 0 2px var(--core-blue-bright);
-  --jp-cell-editor-active-background: rgba(0, 0, 0, 0.95);
+  --jp-cell-editor-background: rgba(4, 8, 16, 0.8);
+  --jp-cell-editor-border-color: rgba(24, 32, 48, 0.6);
+  --jp-cell-editor-box-shadow: inset 0 0 2px var(--dawn-electric);
+  --jp-cell-editor-active-background: rgba(0, 0, 8, 0.85);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
 
   --jp-cell-prompt-width: 64px;
@@ -221,27 +223,27 @@ mingle with hot blue stars and golden suns.
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 0.8;
-  --jp-cell-prompt-not-active-font-color: var(--core-gold-warm);
+  --jp-cell-prompt-not-active-font-color: var(--dawn-cloud-silver);
 
-  /* Input prompt - blue star */
-  --jp-cell-inprompt-font-color: var(--core-blue-bright);
+  /* Input prompt - electric blue */
+  --jp-cell-inprompt-font-color: var(--dawn-electric);
 
-  /* Output prompt - gold star */
-  --jp-cell-outprompt-font-color: var(--core-gold-bright);
+  /* Output prompt - golden horizon */
+  --jp-cell-outprompt-font-color: var(--dawn-gold);
 
   /* Notebook specific styles */
 
   --jp-notebook-padding: 10px;
-  --jp-notebook-select-background: rgba(0, 0, 0, 0.85);
-  --jp-notebook-multiselected-color: rgba(96, 160, 255, 0.24);
+  --jp-notebook-select-background: rgba(8, 16, 24, 0.7);
+  --jp-notebook-multiselected-color: rgba(64, 128, 224, 0.24);
 
   --jp-notebook-scroll-padding: calc(
     100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
       var(--jp-code-padding) - var(--jp-cell-padding) - 1px
   );
 
-  --jp-scrollbar-background-color: rgba(0, 0, 0, 0.7);
-  --jp-scrollbar-thumb-color: 30, 30, 40;
+  --jp-scrollbar-background-color: rgba(8, 16, 24, 0.5);
+  --jp-scrollbar-thumb-color: 40, 50, 70;
 
   --jp-scrollbar-endpad: 3px;
   --jp-scrollbar-thumb-margin: 3.5px;
@@ -249,13 +251,13 @@ mingle with hot blue stars and golden suns.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: rgba(255, 96, 80, 0.2);
-  --jp-rendermime-table-row-background: rgba(0, 0, 0, 0.8);
-  --jp-rendermime-table-row-hover-background: rgba(96, 160, 255, 0.2);
+  --jp-rendermime-error-background: rgba(224, 112, 112, 0.28);
+  --jp-rendermime-table-row-background: rgba(8, 16, 24, 0.6);
+  --jp-rendermime-table-row-hover-background: rgba(64, 128, 224, 0.2);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.85);
+  --jp-dialog-background: rgba(0, 0, 0, 0.7);
 
   /* Console specific styles */
 
@@ -265,10 +267,10 @@ mingle with hot blue stars and golden suns.
 
   --jp-toolbar-border-color: var(--jp-border-color2);
   --jp-toolbar-micro-height: 8px;
-  --jp-toolbar-background: rgba(0, 0, 0, 0.94);
+  --jp-toolbar-background: rgba(8, 16, 24, 0.85);
   --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: rgba(0, 0, 0, 0.96);
+  --jp-toolbar-active-background: rgba(4, 8, 16, 0.9);
 
   /* Statusbar specific styles */
 
@@ -276,46 +278,46 @@ mingle with hot blue stars and golden suns.
 
   /* Input field styles */
 
-  --jp-input-box-shadow: inset 0 0 2px var(--core-blue-bright);
-  --jp-input-active-background: rgba(0, 0, 0, 0.96);
-  --jp-input-hover-background: rgba(0, 0, 0, 0.92);
-  --jp-input-background: rgba(0, 0, 0, 0.9);
-  --jp-input-border-color: var(--core-dust);
+  --jp-input-box-shadow: inset 0 0 2px var(--dawn-electric);
+  --jp-input-active-background: rgba(4, 8, 16, 0.9);
+  --jp-input-hover-background: rgba(16, 24, 40, 0.8);
+  --jp-input-background: rgba(8, 16, 24, 0.8);
+  --jp-input-border-color: var(--dawn-dust);
   --jp-input-active-border-color: var(--jp-brand-color1);
-  --jp-input-active-box-shadow-color: rgba(96, 160, 255, 0.3);
+  --jp-input-active-box-shadow-color: rgba(64, 128, 224, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: rgba(96, 160, 255, 0.2);
-  --jp-editor-selected-focused-background: rgba(96, 160, 255, 0.3);
+  --jp-editor-selected-background: rgba(64, 128, 224, 0.2);
+  --jp-editor-selected-focused-background: rgba(64, 128, 224, 0.3);
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
-  /* Code mirror specific styles - Galactic Core syntax */
+  /* Code mirror specific styles - Astronomical Dawn syntax */
 
-  --jp-mirror-editor-keyword-color: var(--core-red-bright);         /* Keywords - red giant */
-  --jp-mirror-editor-atom-color: var(--core-cyan);                  /* Atoms - cyan */
-  --jp-mirror-editor-number-color: var(--core-gold-bright);         /* Numbers - gold star */
-  --jp-mirror-editor-def-color: var(--core-blue-bright);            /* Definitions - blue star */
-  --jp-mirror-editor-variable-color: var(--core-star-white);        /* Variables - white star */
-  --jp-mirror-editor-variable-2-color: var(--core-star-cream);      /* Var2 - cream */
-  --jp-mirror-editor-variable-3-color: var(--core-cyan);            /* Var3 - cyan */
-  --jp-mirror-editor-punctuation-color: #e0e0f0;                    /* Punctuation - bright */
-  --jp-mirror-editor-property-color: var(--core-blue-bright);       /* Properties - blue star */
-  --jp-mirror-editor-operator-color: #e0e0f0;                       /* Operators - bright */
-  --jp-mirror-editor-comment-color: var(--core-amber);              /* Comments - warm amber */
-  --jp-mirror-editor-string-color: var(--core-teal);                /* Strings - teal */
-  --jp-mirror-editor-string-2-color: var(--core-gold-warm);         /* Alt strings - warm gold */
-  --jp-mirror-editor-meta-color: var(--core-red-bright);            /* Meta - red */
-  --jp-mirror-editor-qualifier-color: var(--core-gold-warm);        /* Qualifier - gold */
-  --jp-mirror-editor-builtin-color: var(--core-gold-bright);        /* Builtins - bright gold */
-  --jp-mirror-editor-bracket-color: #e0e0f0;                        /* Brackets - bright */
-  --jp-mirror-editor-tag-color: var(--core-red-bright);             /* Tags - red giant */
-  --jp-mirror-editor-attribute-color: var(--core-gold-warm);        /* Attributes - gold */
-  --jp-mirror-editor-header-color: var(--core-blue-bright);         /* Headers - blue star */
-  --jp-mirror-editor-quote-color: var(--core-teal);                 /* Quotes - teal */
-  --jp-mirror-editor-link-color: var(--core-cyan);                  /* Links - cyan */
-  --jp-mirror-editor-error-color: var(--core-red-giant);            /* Errors - red */
-  --jp-mirror-editor-hr-color: var(--core-amber);                   /* HR - amber */
+  --jp-mirror-editor-keyword-color: var(--dawn-violet);            /* Keywords - violet */
+  --jp-mirror-editor-atom-color: var(--dawn-azure);                /* Atoms - bright azure */
+  --jp-mirror-editor-number-color: var(--dawn-gold);               /* Numbers - gold */
+  --jp-mirror-editor-def-color: var(--dawn-sky-bright);            /* Definitions - sky blue */
+  --jp-mirror-editor-variable-color: var(--dawn-star-white);       /* Variables - star white */
+  --jp-mirror-editor-variable-2-color: var(--dawn-star-soft);      /* Var2 - soft white */
+  --jp-mirror-editor-variable-3-color: var(--dawn-azure);          /* Var3 - azure */
+  --jp-mirror-editor-punctuation-color: #c0c8d8;                   /* Punctuation - silver */
+  --jp-mirror-editor-property-color: var(--dawn-electric);         /* Properties - electric blue */
+  --jp-mirror-editor-operator-color: #c0c8d8;                      /* Operators - silver */
+  --jp-mirror-editor-comment-color: var(--dawn-cloud-silver);      /* Comments - cloud silver */
+  --jp-mirror-editor-string-color: var(--dawn-amber);              /* Strings - amber gold */
+  --jp-mirror-editor-string-2-color: var(--dawn-honey);            /* Alt strings - honey */
+  --jp-mirror-editor-meta-color: var(--dawn-purple);               /* Meta - purple */
+  --jp-mirror-editor-qualifier-color: var(--dawn-gold);            /* Qualifier - gold */
+  --jp-mirror-editor-builtin-color: var(--dawn-gold);              /* Builtins - gold */
+  --jp-mirror-editor-bracket-color: #c0c8d8;                       /* Brackets - silver */
+  --jp-mirror-editor-tag-color: var(--dawn-electric);              /* Tags - electric blue */
+  --jp-mirror-editor-attribute-color: var(--dawn-amber);           /* Attributes - amber */
+  --jp-mirror-editor-header-color: var(--dawn-sky-bright);         /* Headers - sky blue */
+  --jp-mirror-editor-quote-color: var(--dawn-amber);               /* Quotes - amber */
+  --jp-mirror-editor-link-color: var(--dawn-azure);                /* Links - bright azure */
+  --jp-mirror-editor-error-color: #e07070;                         /* Errors - soft red */
+  --jp-mirror-editor-hr-color: var(--dawn-cloud-silver);           /* HR - silver */
 
   /* User colors */
 
@@ -339,7 +341,7 @@ mingle with hot blue stars and golden suns.
   --jp-text-editor-icon-color: var(--md-grey-200);
   --jp-inspector-icon-color: var(--md-grey-200);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--core-blue-bright);
+  --jp-switch-true-position-color: var(--dawn-electric);
   --jp-switch-cursor-color: rgba(0, 0, 0, 0.8);
 
   /* Vega extension styles */
@@ -354,29 +356,29 @@ mingle with hot blue stars and golden suns.
   --jp-search-toggle-off-opacity: 0.6;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: var(--core-gold-bright);
+  --jp-search-selected-match-background-color: var(--dawn-gold);
   --jp-search-selected-match-color: black;
-  --jp-search-unselected-match-background-color: var(--core-blue-hot);
+  --jp-search-unselected-match-background-color: var(--dawn-sapphire);
   --jp-search-unselected-match-color: var(--jp-ui-font-color0);
 
   /* Button colors */
-  --jp-accept-color-normal: var(--core-blue-bright);
-  --jp-accept-color-hover: var(--core-cyan);
-  --jp-accept-color-active: var(--core-blue-hot);
+  --jp-accept-color-normal: var(--dawn-electric);
+  --jp-accept-color-hover: var(--dawn-azure);
+  --jp-accept-color-active: var(--dawn-sapphire);
 
   --jp-reject-color-normal: #e06060;
   --jp-reject-color-hover: #f08080;
   --jp-reject-color-active: #c05050;
 
-  --jp-warn-color-normal: var(--core-gold-warm);
-  --jp-warn-color-hover: var(--core-gold-bright);
-  --jp-warn-color-active: var(--core-red-bright);
+  --jp-warn-color-normal: var(--dawn-gold);
+  --jp-warn-color-hover: var(--dawn-amber);
+  --jp-warn-color-active: #e07070;
 }
 
-/* Starfield background */
-body[data-jp-theme-name="Galactic Core"] {
-  background-color: #000000 !important;
-  background-image: url('./deepfield.jpg') !important;
+/* Dawn background */
+body[data-jp-theme-name="Astronomical Dawn"] {
+  background-color: #000008 !important;
+  background-image: url('./astrodawn.jpg') !important;
   background-size: cover !important;
   background-position: center !important;
   background-attachment: fixed !important;
@@ -388,11 +390,11 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .jp-Notebook {
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(4, 8, 16, 0.75);
 }
 
 .jp-SideBar {
-  background: rgba(0, 0, 0, 0.94);
+  background: rgba(4, 8, 16, 0.85);
 }
 
 .jp-InputArea-editor {
@@ -415,81 +417,73 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .jp-DirListing {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(4, 8, 16, 0.7);
 }
 
 .jp-LauncherCard {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(16, 24, 40, 0.8);
   transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
   transition-property: color, background-color, border-color;
 }
 
 .jp-LauncherCard:hover {
-  background: rgba(10, 10, 16, 0.92);
+  background: rgba(24, 32, 48, 0.9);
   transition-duration: 0.1s;
-  border-color: var(--core-blue-bright);
+  border-color: var(--dawn-electric);
 }
 
 .jp-SideBar.lm-TabBar .lm-TabBar-tab.lm-mod-current {
   border-top-style: solid;
-  border-top-color: var(--core-blue-bright);
+  border-top-color: var(--dawn-electric);
   border-top-width: 3px; /* stylelint-disable-line */
 }
 
 .CodeMirror-selected {
-  background-color: rgba(96, 160, 255, 0.25) !important;
+  background-color: rgba(64, 128, 224, 0.25) !important;
 }
 
 .widget-slider .ui-slider .ui-slider-handle {
-  background-color: var(--core-blue-bright);
+  background-color: var(--dawn-electric);
 }
 
 .widget-slider .ui-slider {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(24, 32, 48, 0.8);
 }
 
 #jp-menu-panel {
-  background: #000000;
+  background: #040810;
 }
 
 .lm-MenuBar {
-  background: #000000;
+  background: #040810;
 }
 
 .lm-MenuBar-item.lm-mod-active {
-  background: rgba(96, 160, 255, 0.3);
+  background: rgba(64, 128, 224, 0.3);
 }
 
 .lm-Menu {
-  background: #000000 !important;
+  background: #081018 !important;
 }
 
 .lm-Menu-item.lm-mod-active {
-  background: rgba(96, 160, 255, 0.3);
+  background: rgba(64, 128, 224, 0.3);
 }
 
 .lm-Menu-content {
-  background: #000000 !important;
+  background: #081018 !important;
 }
 
 .jp-MainMenu .lm-Menu {
-  background: #000000 !important;
+  background: #081018 !important;
 }
 
 #jp-top-panel {
-  background: #000000;
+  background: rgba(4, 8, 16, 0.9);
 }
 
 #jp-bottom-panel {
-  background: #000000;
-}
-
-.lm-TabBar {
-  background: #000000;
-}
-
-.lm-DockPanel-tabBar {
-  background: #000000;
+  background: rgba(4, 8, 16, 0.9);
 }
 
 .jp-Launcher {
@@ -497,75 +491,75 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .jp-Launcher-cwd {
-  background: rgba(5, 5, 8, 0.8) !important;
+  background: rgba(4, 8, 16, 0.7) !important;
   border-radius: 6px;
   padding: 4px 8px;
 }
 
 .jp-FileEditor {
-  background: rgba(0, 0, 0, 0.94);
+  background: rgba(0, 0, 8, 0.9);
 }
 
 /* Fix transparent menus and panels - these need solid backgrounds to be readable */
 
 /* Settings Editor - full panel and all sub-components */
 .jp-SettingsEditor {
-  background: rgba(5, 5, 8, 0.85) !important;
+  background: rgba(4, 8, 16, 0.75) !important;
 }
 
 .jp-SettingsEditor-content {
-  background: rgba(5, 5, 8, 0.85) !important;
+  background: rgba(4, 8, 16, 0.75) !important;
 }
 
 .jp-SettingsEditor .jp-PluginList {
-  background: rgba(10, 10, 16, 0.92) !important;
+  background: rgba(8, 16, 24, 0.85) !important;
 }
 
 /* Settings editor plugin list items and headers */
 .jp-PluginList-entry,
 .jp-PluginList-header {
-  background: rgba(10, 10, 16, 0.72) !important;
+  background: rgba(8, 16, 24, 0.62) !important;
 }
 
 .jp-SettingsEditor .jp-SettingsForm {
-  background: rgba(5, 5, 8, 0.85) !important;
+  background: rgba(4, 8, 16, 0.75) !important;
 }
 
 /* Settings editor search bar */
 .jp-SettingsEditor .jp-FilterBox input,
 .jp-SettingsEditor .jp-PluginList input {
-  background: rgba(16, 16, 24, 0.88) !important;
-  border: 1px solid rgba(96, 160, 255, 0.3) !important;
+  background: rgba(16, 24, 40, 0.8) !important;
+  border: 1px solid rgba(64, 128, 224, 0.3) !important;
 }
 
 .jp-SettingsPanel {
-  background: rgba(5, 5, 8, 0.85) !important;
+  background: rgba(4, 8, 16, 0.75) !important;
 }
 
 .jp-PluginEditor {
-  background: rgba(5, 5, 8, 0.85) !important;
+  background: rgba(4, 8, 16, 0.75) !important;
 }
 
 /* Language Server Protocol popups */
 .lsp-hover {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 .lsp-completer {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 .jp-LSPStatus-tooltip {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 /* Completer/Autocomplete dropdown */
 .jp-Completer {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 .jp-Completer-list {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 .jp-Completer-item {
@@ -573,71 +567,43 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .jp-Completer-item.jp-mod-active {
-  background: rgba(96, 160, 255, 0.3);
+  background: rgba(64, 128, 224, 0.3);
 }
 
 /* Tooltips and hover info */
 .jp-Tooltip {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 .jp-HoverBox {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 /* Dialogs and modals */
 .jp-Dialog-content {
-  background: rgba(10, 10, 16, 0.99) !important;
-}
-
-/* Dialog buttons */
-.jp-Dialog-button.jp-mod-accept {
-  background-color: #2878e0 !important;
-  color: white !important;
-}
-
-.jp-Dialog-button.jp-mod-accept:hover {
-  background-color: #4090f0 !important;
-}
-
-.jp-Dialog-button.jp-mod-reject {
-  background-color: #d83838 !important;
-  color: white !important;
-}
-
-.jp-Dialog-button.jp-mod-reject:hover {
-  background-color: #f05050 !important;
-}
-
-.jp-Dialog-button.jp-mod-warn {
-  background-color: #2878e0 !important;
-  color: white !important;
-}
-
-.jp-Dialog-button.jp-mod-warn:hover {
-  background-color: #4090f0 !important;
+  background: rgba(8, 16, 24, 0.98) !important;
 }
 
 /* Markdown preview mode dropdown and similar popups */
 .jp-HTMLSelect select {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 .jp-HTMLSelect option {
-  background: #0a0a10 !important;
+  background: #081018 !important;
 }
 
 /* Command palette */
 .jp-Modal .lm-CommandPalette {
-  background: rgba(5, 5, 8, 0.99) !important;
+  background: rgba(4, 8, 16, 0.98) !important;
 }
 
 .lm-CommandPalette-content {
-  background: rgba(5, 5, 8, 0.99) !important;
+  background: rgba(4, 8, 16, 0.98) !important;
 }
 
 .lm-CommandPalette-header {
-  background: rgba(16, 16, 24, 0.98) !important;
+  background: rgba(16, 24, 40, 0.95) !important;
 }
 
 .lm-CommandPalette-item {
@@ -645,94 +611,94 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .lm-CommandPalette-item.lm-mod-active {
-  background: rgba(96, 160, 255, 0.3);
+  background: rgba(64, 128, 224, 0.3);
 }
 
 /* Property inspector / metadata panel */
 .jp-MetadataForm {
-  background: rgba(5, 5, 8, 0.98) !important;
+  background: rgba(4, 8, 16, 0.95) !important;
 }
 
 /* Table of contents */
 .jp-TableOfContents {
-  background: rgba(5, 5, 8, 0.95) !important;
+  background: rgba(4, 8, 16, 0.9) !important;
 }
 
 /* Debugger panels */
 .jp-DebuggerSidebar {
-  background: rgba(5, 5, 8, 0.95) !important;
+  background: rgba(4, 8, 16, 0.9) !important;
 }
 
 /* Extension manager */
 .jp-extensionmanager-view {
-  background: rgba(5, 5, 8, 0.98) !important;
+  background: rgba(4, 8, 16, 0.95) !important;
 }
 
 /* Running panel */
 .jp-RunningSessions {
-  background: rgba(5, 5, 8, 0.95) !important;
+  background: rgba(4, 8, 16, 0.9) !important;
 }
 
 /* Kernel selector dropdown */
 .jp-Dialog-body select {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 /* Context menus (right-click menus) */
 .lm-Menu-content {
-  background: #0a0a10 !important;
+  background: #081018 !important;
 }
 
 /* Search panel */
 .jp-DocumentSearch-overlay {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 /* Notification toasts */
 .jp-toast-container {
-  background: rgba(10, 10, 16, 0.98) !important;
+  background: rgba(8, 16, 24, 0.95) !important;
 }
 
 /* JSON settings editor raw view */
 .jp-SettingsRawEditor {
-  background: rgba(5, 5, 8, 0.98) !important;
+  background: rgba(4, 8, 16, 0.95) !important;
 }
 
 /* Markdown Preview / Rendered Markdown (slightly more opaque than notebooks) */
 .jp-MarkdownViewer {
-  background: rgba(5, 5, 8, 0.88) !important;
+  background: rgba(4, 8, 16, 0.8) !important;
 }
 
 .jp-MarkdownViewer-content {
-  background: rgba(5, 5, 8, 0.88) !important;
+  background: rgba(4, 8, 16, 0.8) !important;
 }
 
 /* Markdown cells in notebooks - nearly transparent */
 .jp-MarkdownCell .jp-RenderedMarkdown {
-  background: rgba(5, 5, 8, 0.25);
+  background: rgba(4, 8, 16, 0.15);
 }
 
 /* JSON file viewer - semi-opaque background matching Markdown preview */
 .jp-RenderedJSON {
-  background: rgba(5, 5, 8, 0.88) !important;
+  background: rgba(4, 8, 16, 0.8) !important;
 }
 
 /* Code cells - subtle blue-tinted border */
 .jp-CodeCell {
-  border: 1px solid rgba(96, 160, 255, 0.2);
+  border: 1px solid rgba(64, 128, 224, 0.2);
   border-radius: 6px;
 }
 
-/* Cell outputs - subtle gold-tinted border */
+/* Cell outputs - subtle warm-tinted border */
 .jp-OutputArea-output {
-  background: rgba(5, 5, 8, 0.5);
-  border: 1px solid rgba(255, 204, 96, 0.25);
+  background: rgba(4, 8, 16, 0.4);
+  border: 1px solid rgba(224, 192, 128, 0.25);
   border-radius: 4px;
 }
 
 /* Console - matching Markdown preview opacity */
 .jp-CodeConsole {
-  background: rgba(5, 5, 8, 0.88) !important;
+  background: rgba(4, 8, 16, 0.8) !important;
 }
 
 .jp-CodeConsole-content {
@@ -756,18 +722,46 @@ body[data-jp-theme-name="Galactic Core"] {
 }
 
 .jp-CodeConsole .jp-OutputArea-output {
-  background: rgba(5, 5, 8, 0.5) !important;
+  background: rgba(4, 8, 16, 0.4) !important;
 }
 
 /* Document tabs - inactive tabs fully opaque and muted, active tabs lighter */
 .lm-TabBar-tab {
-  background: #050508 !important;
-  color: #606070 !important;
+  background: #040810 !important;
+  color: #607080 !important;
 }
 
 .lm-TabBar-tab.lm-mod-current {
-  background: rgba(10, 10, 16, 0.8) !important;
-  color: var(--core-star-white) !important;
+  background: rgba(8, 16, 24, 0.7) !important;
+  color: var(--dawn-star-white) !important;
+}
+
+/* Dialog buttons */
+.jp-Dialog-button.jp-mod-accept {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-accept:hover {
+  background-color: #6aade8 !important;
+}
+
+.jp-Dialog-button.jp-mod-reject {
+  background-color: #e06060 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-reject:hover {
+  background-color: #f08080 !important;
+}
+
+.jp-Dialog-button.jp-mod-warn {
+  background-color: #4a90d9 !important;
+  color: white !important;
+}
+
+.jp-Dialog-button.jp-mod-warn:hover {
+  background-color: #6aade8 !important;
 }
 
 
