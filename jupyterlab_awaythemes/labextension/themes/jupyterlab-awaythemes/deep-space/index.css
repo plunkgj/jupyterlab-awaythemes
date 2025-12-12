@@ -504,11 +504,24 @@ body[data-jp-theme-name="Deep Space"] {
 }
 
 .jp-SettingsEditor .jp-PluginList {
-  background: rgba(10, 12, 18, 0.75) !important;
+  background: rgba(10, 12, 18, 0.85) !important;
+}
+
+/* Settings editor plugin list items and headers */
+.jp-PluginList-entry,
+.jp-PluginList-header {
+  background: rgba(10, 12, 18, 0.62) !important;
 }
 
 .jp-SettingsEditor .jp-SettingsForm {
   background: rgba(5, 6, 10, 0.75) !important;
+}
+
+/* Settings editor search bar */
+.jp-SettingsEditor .jp-FilterBox input,
+.jp-SettingsEditor .jp-PluginList input {
+  background: rgba(16, 18, 26, 0.8) !important;
+  border: 1px solid rgba(96, 160, 255, 0.3) !important;
 }
 
 .jp-SettingsPanel {
@@ -643,13 +656,42 @@ body[data-jp-theme-name="Deep Space"] {
   background: rgba(5, 6, 10, 0.95) !important;
 }
 
-/* Markdown Preview / Rendered Markdown (0.75 to match notebooks) */
+/* Markdown Preview / Rendered Markdown (slightly more opaque than notebooks) */
 .jp-MarkdownViewer {
-  background: rgba(5, 6, 10, 0.75) !important;
+  background: rgba(5, 6, 10, 0.8) !important;
 }
 
 .jp-MarkdownViewer-content {
-  background: rgba(5, 6, 10, 0.75) !important;
+  background: rgba(5, 6, 10, 0.8) !important;
+}
+
+/* Markdown cells in notebooks - nearly transparent */
+.jp-MarkdownCell .jp-RenderedMarkdown {
+  background: rgba(5, 6, 10, 0.15);
+}
+
+/* Code cells - subtle blue-tinted border */
+.jp-CodeCell {
+  border: 1px solid rgba(96, 160, 255, 0.2);
+  border-radius: 6px;
+}
+
+/* Cell outputs - subtle gold-tinted border */
+.jp-OutputArea-output {
+  background: rgba(5, 6, 10, 0.4);
+  border: 1px solid rgba(255, 204, 96, 0.25);
+  border-radius: 4px;
+}
+
+/* Document tabs - inactive tabs fully opaque and muted, active tabs lighter */
+.lm-TabBar-tab {
+  background: #05060a !important;
+  color: #606070 !important;
+}
+
+.lm-TabBar-tab.lm-mod-current {
+  background: rgba(10, 12, 18, 0.7) !important;
+  color: var(--space-star-white) !important;
 }
 
 
