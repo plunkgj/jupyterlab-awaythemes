@@ -34,6 +34,12 @@ const themes: IThemeDefinition[] = [
     name: 'Astronomical Dawn',
     isLight: false,
     cssPath: 'jupyterlab-awaythemes/astronomical-dawn/index.css'
+  },
+  {
+    id: 'aurora',
+    name: 'Aurora',
+    isLight: false,
+    cssPath: 'jupyterlab-awaythemes/aurora/index.css'
   }
 ];
 

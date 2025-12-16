@@ -32,6 +32,12 @@ const themes = [
         name: 'Astronomical Dawn',
         isLight: false,
         cssPath: 'jupyterlab-awaythemes/astronomical-dawn/index.css'
+    },
+    {
+        id: 'aurora',
+        name: 'Aurora',
+        isLight: false,
+        cssPath: 'jupyterlab-awaythemes/aurora/index.css'
     }
 ];
 /**
@@ -61,4 +67,4 @@ const plugin = {
 /***/ })
 
 }]);
-//# sourceMappingURL=lib_index_js.8a22bb6464891ae31d4f.js.map
+//# sourceMappingURL=lib_index_js.5cd06a606599e9c148c0.js.map
